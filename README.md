@@ -1,1 +1,1 @@
-# primechecker
+# primeChecker
