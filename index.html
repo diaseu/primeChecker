@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    let n = parseInt(prompt('Give me a number greater than 0'))
+    let prime = true
+    
+    if (n === 1) {
+      console.log(`${n} is not prime`)
+    } else if (n >= 2) {
+      for (let i = 2; i < n; i++) {
+        if (n % i === 0) {
+          prime = false
+          break
+        }
+      }
+
+      if (prime) {
+        alert(`${n} is a prime number`)
+      } else {
+        alert(`${n} is not a prime number`)
+      }
+
+    // end else if n >= 2
+    }
+
+  </script>
+
+</body>
+</html>
